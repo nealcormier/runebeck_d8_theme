@@ -1,0 +1,20 @@
+global-components:
+  Version: 1.x
+  css:
+    theme:
+      css/jquery-ui.min.css: {}
+      css/style.css: {}
+      css/media.css: {}
+      css/animation_boilerplate.css: {}
+      css/rune_views.css: {}
+  js:  
+    js/jquery-ui.min.js: {}
+    js/scr_cambian.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+

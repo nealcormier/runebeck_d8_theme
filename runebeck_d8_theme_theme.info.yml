@@ -1,0 +1,23 @@
+name: Runebeck Construction Theme to D8
+type: theme
+description: Theme for Runebeck Construction, specializing in all kinds of remodelling and tile work.
+package: core
+# core: 8.x
+
+#Libraries
+libraries:
+  - runebeck_d8_theme_theme/global-components
+
+#Regions
+regions:
+  home_banner_text: 'Home page banner text'
+  content: 'Content'
+  logo_block_think: 'Logo Block Think'
+  marketing_zero: 'Marketing Zero Region'
+  auto_block_footer: 'Autonomous Block Footer'
+  search_box_one: 'Search Block '
+
+version: '8.x-1.3'
+core: '8.x'
+project: 'runebeck_d8_theme'
+

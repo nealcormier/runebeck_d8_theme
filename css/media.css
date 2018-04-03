@@ -1,0 +1,630 @@
+
+@media screen and (max-width: 4500px) {
+
+           
+             .col-sm {
+                  width: 33.3%;
+                  float: left;
+                }
+
+
+                #block-menu-menu-main-menu-response {
+                  display: none !important;
+                }
+
+
+/* Homepage Slides */
+
+            .marketing_box {
+              padding: 2em 10em 5em 9em;
+            }
+        
+            .marketing_page_zero {
+              background: url(../images/wall-light.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page {
+              height: 100%;
+              background: url(../images/kitchen-streamlined.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_two {
+              height: 100%;
+              background: url(../images/house-livingroom.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_three {
+               height: 100%;
+               background: url(../images/wall-light.jpg) no-repeat #000;
+               background-size: cover;
+               background-position: left top;
+            } 
+
+
+/* Bathroom Slides */
+
+
+            /*.marketing_page_zero_bathroom {
+              background: url(../images/bathtub-1.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }*/
+
+            .marketing_page_bathroom {
+              height: 100%;
+              background: url(../images/bathtub-1.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_two_bathroom {
+              height: 100%;
+              background: url(../images/bathroom-2.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_three_bathroom {
+               height: 100%;
+               background: url(../images/bathroom-3.jpg) no-repeat #000;
+               background-size: cover;
+               background-position: left top;
+            } 
+
+/* Remodeling Slides */
+
+            .marketing_page_remodeling {
+              height: 100%;
+              background: url(../images/kitchen-before-after.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_two_remodeling {
+              height: 100%;
+              background: url(../images/before-after-1.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_three_remodeling {
+               height: 100%;
+               background: url(../images/commercial_remodeling.jpg) no-repeat #000;
+               background-size: cover;
+               background-position: left top;
+            } 
+
+/* Roofing Slides */
+
+            .marketing_page_roofing {
+              height: 100%;
+              background: url(../images/roof-plate.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_two_roofing {
+              height: 100%;
+              background: url(../images/solar-system.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_three_roofing {
+               height: 100%;
+               background: url(../images/roof-red.jpg) no-repeat #000;
+               background-size: cover;
+               background-position: left top;
+            } 
+
+
+/* About Slides */
+
+            .marketing_page_about {
+              height: 100%;
+              background: url(../images/construction-wood.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_two_about {
+              height: 100%;
+              background: url(../images/deck-brush.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_three_about {
+               height: 100%;
+               background: url(../images/floor-brick.jpg) no-repeat #000;
+               background-size: cover;
+               background-position: left top;
+            } 
+
+
+/* End Slides */
+
+
+
+             h1 {
+              font-size: 6em;
+              line-height: 1.4em;
+            }
+
+             .logo_wrap {
+                top: 4.5em;
+            }
+
+            #runebeck_logo {
+                max-width: 90px;
+                max-height: 135px;
+                top: 1.4em;
+                margin-right: 0.5em;
+
+
+            }
+
+             #logo_name {
+                font-size: 0.5em;
+            }
+
+              .description_rune {
+                  font-size: 2em;
+                  margin-top: 1em;
+            }
+
+             .homebanner {
+                min-height: 220px;
+                background-size: cover;
+                background-position: 20% 40%;
+                top: -1.4em;
+                margin-bottom: -1.5em;
+            }           
+
+            .elegant {
+                font-size: 4.8em;
+              }
+
+            .menu-wrap {
+                color: #fff;
+                padding-right: 1.8em;
+                top: 12em;
+                position: relative;
+                z-index: 1;
+              }
+
+
+              #main-menu a {
+                  padding: 0px 22px;
+                  display: block;
+                  font-size: 27px;
+                  text-decoration: none;
+                  color: #fff;
+                  line-height: 100%;
+                  white-space: nowrap;
+                  text-transform: uppercase;
+                  font-weight: 500;
+                }
+
+                .number_block {
+                  min-height: 300px;
+                }
+
+}/* END MQ END MQ END MQ*/
+
+
+
+
+@media screen and (max-width: 1640px) {
+
+           
+      
+         .elegant {
+              font-size: 4.5em;
+            }
+
+          #main-menu a {     
+                  font-size: 20px;
+                }
+
+}/* END MQ END MQ END MQ*/
+
+
+@media screen and (max-width: 1350px) {
+
+           #search_box_one_block {
+              display: none;
+           }
+
+           .menu-wrap {
+            display: none;
+           }
+
+
+           #block-menu-menu-main-menu-response {
+                  display: block;
+            }
+
+        input {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 40px;
+          font-size: 2em;
+          padding: 5px;
+        }
+
+        body > div.mean-bar > nav > div > ul > li.mean-last > div > div > div > form > div > div > h2 {
+          display: none;
+        }
+
+        body > div.mean-bar > nav > div > ul > li.mean-last > a:nth-child(1) {
+            display: none;
+        }
+
+        body > div.mean-bar > nav > div > ul > li.mean-last > a:nth-child(2) {
+           display: none;
+        }
+}
+
+
+@media screen and (max-width: 992px) {
+
+       .container_lg {
+              width: 100%;
+      }
+
+      .marketing_box {
+        padding: 1em 2em 1em 2em;
+      }
+
+      .marketing_page_zero {
+              background: url(../images/wall-light-mobile.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page {
+              height: 100%;
+              background: url(../images/kitchen-stove-mobile.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_two {
+              height: 100%;
+              background: url(../images/house-livingroom-mobile.jpg) no-repeat #000;
+              background-size: cover;
+              background-position: left top;
+            }
+
+            .marketing_page_three {
+               height: 100%;
+               background: url(../images/wall-light-mobile.jpg) no-repeat #000;
+               background-size: cover;
+               background-position: left top;
+
+            } 
+
+        h1 {
+          font-size: 2.5em;
+          line-height: 1.4em;
+        }
+
+        
+
+          #logo_name {
+                font-size: 1.2em;
+            }
+
+
+          .description_rune {
+              font-size: 1.7em;
+            }
+
+
+            body{
+              margin: 0;
+            }
+
+            .menu-wrap{ text-align: center; }
+
+            #main-menu,
+            #main-menu ul{
+              width: 100%;
+              text-align: center;
+            }
+
+            #main-menu li{
+              float: none;
+            }
+
+            .menu-wrap{
+              position: static;
+              border: 0;
+            }
+
+            .menu-wrap {
+                background: #000;
+              }
+
+            .region-home-banner-text h1{
+              font-size: 24px;
+            }
+
+            .halfwidth{
+              width: 100%;
+            }
+
+         
+
+            #footer-area{
+              padding-bottom: 0;
+            }
+
+            #home-bottom-block,
+            #home-top-block{
+              padding: 0 15px;
+              overflow: hidden;
+            }
+
+            .parallax-block .region{
+              padding: 30px 15px;
+            }
+
+            #container,
+            .menu-wrap{
+              padding: 15px;
+            }
+            
+            body aside,
+            body #content,
+            #top-area .column,
+            #footer-area .column{
+              float: none !important;
+              width: 100% !important;
+              padding: 0 !important;
+              margin: 0 !important;
+              clear: both;
+            }
+
+            #footer,
+            #page-wrap{
+              padding: 0 15px;
+            }
+
+            .social-icons, 
+            .footer_credit .copyright{
+              width: 100%;
+              margin: 10px 0;
+              text-align: center;
+            }
+
+            .nivo-caption {
+              display: none !important;
+            }
+
+            .theme-default .nivo-controlNav {
+              bottom: 10px;
+            }
+
+            .block-webform .webform-component-textfield{
+              width: 100%;
+            }
+
+               .autonomous_block {
+                        padding: 1em;
+                      }
+
+                .region ul.menu li, .region ul.links li, .region .item-list ul li {
+                  width: 100%;
+                }
+
+              .number_block {
+                  min-height: 600px;
+                }
+
+                        
+
+}/* MQ END *//* MQ END *//* MQ END *//* MQ END *//* MQ END *//* MQ END */
+
+
+
+@media screen and (max-width: 768px) {  
+
+    
+                  h1 {
+                      font-size: 1.5em;
+                      line-height: 1.2em;
+                    }
+
+
+                    .homebanner {
+                        min-height: 219px;
+                    }
+
+
+                    .elegant {
+                        font-size: 2.4em;
+                    }
+
+                     #runebeck_logo {
+                            max-width: 86px;
+                            max-height: 100px;
+                            top: 0em;
+                            margin-right: 5px;
+                        }
+
+                     .description_rune {
+                          font-size: 1.2em;
+                          margin-top: 1em;
+                        }
+
+
+                     .logo_wrap {
+                          top: 6.2em;
+                          padding: 1em;
+                          min-height: 94px;
+                          max-height: 40px;
+                      }
+
+
+
+                      .region-banner-text h2 {
+                        font-size: 22px;
+                      }
+
+                      .region-banner-text p {
+                        font-size: 15px;
+                      }
+
+                      .menu-wrap{  
+                        background: #333;
+                        overflow: hidden;
+                      }
+
+                      #main-menu ul {
+                        display: none;
+                      }
+
+                      #main-menu li ul {
+                        position: static;
+                        border: 0;
+                      }
+
+                      #main-menu li ul ul {
+                        margin: 0 !important;
+                        border: 0;
+                      }
+
+                      #main-menu ul,
+                      #main-menu li {
+                        float: none;
+                        width: 100%;
+                      }
+
+                      #main-menu {
+                        border: 0;
+                        float: none;  
+                        background: #000;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        z-index: 99;
+                        right: 0;
+                      }
+
+                      #main-menu a {
+                        width: 100%;
+                        padding: 15px 0;
+                        color: #fff;
+                        border-radius: 0;
+                        margin: 0;
+                        text-align: center;
+                        border-bottom: 1px solid #181818;
+                      }
+
+                      #main-menu li li a {
+                        text-align: center;
+                        font-size: 13px;
+                        background: #0D0D0D;
+                        border-bottom: 1px solid #1B1B1B;
+                        color: #989898;
+                        padding: 15px 0;
+                      }
+
+                      #main-menu li a.active{
+                        border-bottom: 1px solid #181818; 
+                      }
+
+                      #main-menu li:hover > ul,
+                      #main-menu li li:hover > ul,
+                      #main-menu li li li:hover > ul {
+                        display: none;
+                      }
+
+                      .drop-down-toggle {
+                        display: block;
+                      }
+
+                      #main-menu li li.expanded > a{
+                        background-image: none;
+                      }
+
+                      #main-menu .nav-toggle {
+                        display: block;
+                        font-size: 15px;
+                        font-weight: normal;
+                        background: #18222B;
+                        color: white;
+                        margin: 0;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        background: url(../images/mobile-menu.png) right 14px #18222B no-repeat;
+                        padding: 15px;
+                        width: 50px;
+                        font-size: 0;
+                        height: 45px;  
+                      }
+
+                      #main-menu ul.menu li {
+                        margin: 0;
+                        width: 100%;
+                      }
+
+                      #header{
+                        margin-top: 45px;
+                        padding: 5px 10px;
+                      }
+
+                      #top-area .column img,
+                      #footer-area .column img{
+                        width: 100%;
+                      }
+
+                      #views_slideshow_cycle_teaser_section_runebeck_slides-block {
+                        min-height: 370px;
+                    }     
+                   
+                       h2 {
+                        font-size: 45px;
+                        text-align: left;
+                        padding: 5px;
+                    }
+
+                    #logo_name {
+                      font-size: 1em;
+              }
+
+
+}/* MQ END *//* MQ END *//* MQ END *//* MQ END *//* MQ END *//* MQ END */
+
+
+
+@media screen and (max-width: 350px) {  
+  
+                  h1 {
+                    font-size: 1rem;
+                  }
+
+
+                  #runebeck_logo {
+                      width: 85px;
+                      max-height: 90px;
+                  }
+
+                  .elegant {
+                      font-size: 2rem;
+                  }
+    
+
+
+}/* MQ END *//* MQ END *//* MQ END *//* MQ END *//* MQ END *//* MQ END */
+
+

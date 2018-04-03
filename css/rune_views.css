@@ -1,0 +1,64 @@
+
+
+/*view-news*/
+
+.view-news .views-row{
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.view-news p{
+  margin: 0;
+}
+
+.view-news .views-field-created{
+  font-weight: 600;
+  font-size: 12px;
+  color: #666;
+}
+
+.view-news .views-row.views-row-last{
+  border: 0;
+}
+
+.view-gallery .view-content{
+  overflow: hidden;
+}
+
+.view-gallery .views-row{
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.view-gallery .views-row img{
+  display: block;
+}
+
+.front .view-gallery .views-row{
+  width: 33%;
+}
+
+/*---------------------------
+  Responsive Views CSS
+----------------------------*/
+
+
+.views-slideshow-cycle-main-frame-row, .views-slideshow-cycle-main-frame {
+  width: 100% !important;
+}
+
+.mean-container .mean-bar {
+    position: fixed;
+    max-height: 41px;
+    min-height: 35px;
+}
+
+#views_slideshow_cycle_teaser_section_runebeck_slides-block {
+   width: 100% !important;
+    height: auto !important;
+    min-height: 600px;
+}
+

@@ -1,0 +1,97 @@
+{#
+/**
+ * @file
+ *
+ */
+#}
+
+<!-- Header and Navagation -->
+ <div class="menu-wrap"> 
+  <div class="full-wrap clearfix">   
+    <nav id="main-menu"  role="navigation">
+      <div class="menu-navigation-container">
+         {% if page.primary_menu %}
+              {{ page.primary_menu }}
+            {% endif %}      
+      </div>
+      <div class="clear"></div>
+    </nav>
+
+  </div>
+
+</div>
+
+<!--End Navigation -->
+
+<!-- HomeBanner -->
+
+{% if page.home_banner_text %}  
+  <div class="homebanner bgParallax">  
+    {{ page.home_banner_text }}
+    {% endif %}
+    </div>
+    {% if page.search_box_one %}  
+  <div id="search_box_one_block">
+    {{ page.search_box_one }}
+    {% endif %}
+    </div>
+
+<!-- LogoWrap -->
+
+<div class="logo_wrap">
+
+          <div id="runebeck_logo" class="logo_block">
+          </div><!-- END LOGO BLOCK -->
+
+          <div id="logo_name" class="logo_block">
+
+                       <h1>
+                       {{ page.runebeck_logo }}
+                       </h1>
+
+      </div>
+    </div>
+  </div>
+</div><!-- END HOMEBANNER WRAPPER ONE-->
+
+ <div id="dissappear_wrap" class="clearfix">
+
+                    {% if page.logo_block_think %}  
+                    <div id="think_block_one" class="logo_block_think">
+                      {{ page.logo_block_think }}
+                    </div>
+                     {% endif %}
+
+</div><!-- END DISSAPPEAR WRAP -->
+
+
+<div class="timer_dis_wrap">
+
+     <div class="marketing_page_zero">
+        
+      </div><!-- END MARKETING PAGE 0 -->
+</div>
+
+<div class="clearfix"></div>
+
+<div id="container">
+  <div class="container-wrap">
+
+<div class="container_lg col-sm box_plate">
+        {{ page.homeblocks }}
+</div>
+
+
+<div class="">
+      <div class="autonomous_block">
+         {{ page.auto_block_footer }}
+      </div>
+</div>
+
+
+
+    </div>
+
+  </div>
+
+</div>

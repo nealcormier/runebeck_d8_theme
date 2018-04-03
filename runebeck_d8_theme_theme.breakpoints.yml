@@ -1,0 +1,37 @@
+runebeck_d8_theme_theme.largescreen:
+  label: largescreen
+  mediaQuery: 'screen and (max-width: 4500px)'
+  weight: 1
+  multipliers:
+    - 1x
+runebeck_d8_theme_theme.desktop:
+  label: desktop
+  mediaQuery: 'screen and (max-width: 1640px)'
+  weight: 1
+  multipliers:
+    - 1x
+runebeck_d8_theme_theme.laptop:
+  label: laptop
+  mediaQuery: 'screen and (max-width: 1350px)'
+  weight: 1
+  multipliers:
+    - 1x
+runebeck_d8_theme_theme.bootstrappy:
+  label: bootstrappy
+  mediaQuery: 'screen and (max-width: 992px)'
+  weight: 1
+  multipliers:
+    - 1x
+runebeck_d8_theme_theme.tabletandphone:
+  label: tabletandphone
+  mediaQuery: 'screen and (max-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+runebeck_d8_theme_theme.smallphone:
+  label: smallphone
+  mediaQuery: 'screen and (max-width: 350px)'
+  weight: 1
+  multipliers:
+    - 1x
+

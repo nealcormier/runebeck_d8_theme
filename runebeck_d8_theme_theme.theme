@@ -1,0 +1,120 @@
+<?php
+
+/**
+ * @file
+ * Contains theme override functions and preprocess functions
+ */
+
+use Drupal\Core\Template\RenderWrapper;
+use Drupal\Core\Template\Attribute;
+use Drupal\search\Form\SearchBlockForm;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\system\Form\ThemeSettingsForm;
+
+
+/**
+ * Implements hook_preprocess_menu().
+ */
+function runebeck_d8_theme_theme_preprocess_menu(&$variables, $hook) {
+  if ($hook == 'menu__main') { // We're doing that for main menu.
+    // Get the current path.
+    $current_path = \Drupal::request()->getRequestUri();
+    $items = $variables['items'];
+    foreach ($items as $key => $item) {
+      // If path is current_path, set active to li.
+      if ($item['url']->toString() == $current_path) {
+      // Add active link.
+      $variables['items'][$key]['attributes']['class'] = 'active';
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block.html.twig.
+ */
+function runebeck_d8_theme_preprocess_block(&$variables) {
+  // Add a clearfix class to site-wide blocks.
+  if ($variables['plugin_id'] == 'system_branding_block') {
+    $variables['attributes']['class'][] = 'clearfix';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function runebeck_d8_theme_preprocess_node(&$variables) {
+  if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
+    unset($variables['content']['links']['comment']['#links']['comment-add']);
+  }
+}
+
+/**
+ * Implements hook_form_alter() to add classes to the search form.
+ */
+function runebeck_d8_theme_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['search_block_form', 'search_form'])) {
+    $key = ($form_id == 'search_block_form') ? 'actions' : 'basic';
+    if (!isset($form[$key]['submit']['#attributes'])) {
+      $form[$key]['submit']['#attributes'] = new Attribute();
+    }
+    $form[$key]['submit']['#attributes']->addClass('search-form__submit');
+  }
+}
+
+/**
+ * Implements hook_info_alter() to loop through CSS breakpoints and check for label-groups. For future use in terms of Runebeck single page app/view responsiveness.
+ This takes in the name of your theme group and loops through all the theme breakpoints, and then adds them to an array with the label and media query.
+
+ to be added to breakpoints.yml
+
+  global-styles:
+  version: VERSION
+  css:
+    theme:
+      css/fonts/fonts.css: {}
+      css/global.css: {}
+      css/narrow.css: {media: @breakpoint:narrow}
+      css/normal.css: {media: @breakpoint:normal}
+      css/wide.css: {media: @breakpoint:wide}
+
+in place of...
+
+i.e. : runebeck_d8_theme_theme.screen-sm-min:
+  label: screen-sm-min
+  mediaQuery: 'screen and (max-width: 4500px)'
+  weight: 1
+  multipliers:
+    - 1x
+
+ 
+
+function my_theme_library_info_alter(&$libraries, $extension) {
+  $group_id = "my_theme";
+  $group_breakpoints = array();
+  $breakpoints = array_reverse(\Drupal::service('breakpoint.manager')->getBreakpointsByGroup($group_id));
+  foreach ($breakpoints as $breakpoint_id => $breakpoint) {
+    $media_query = $breakpoint->getMediaQuery();
+    $pluginDefinition = $breakpoint->getPluginDefinition();
+    $label = $pluginDefinition['label'];
+    $group_breakpoints[$label] = $media_query;
+  }
+  if($extension == $group_id) {
+    foreach($libraries as $library_id => $library) {
+      if($library['css']) {
+        foreach($library['css'] as $css_key_id => $css_key) {
+          foreach($css_key as $css_file_id => $css_file) {
+            if($css_file['media']) {
+              if(strpos($css_file['media'], '@breakpoint:') >= 0) {
+                $breakpoint = str_replace('@breakpoint:','',$css_file['media']);
+                if($group_breakpoints[$breakpoint]) {
+                  $libraries[$library_id]['css'][$css_key_id][$css_file_id]['media'] = $group_breakpoints[$breakpoint];
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }*/
+}
